@@ -1,9 +1,14 @@
-const CACHE = "gaia-prototype-v1";
+const CACHE = "gaia-prototype-v2";
 const CORE = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./pricing.html",
+  "./signup.html",
+  "./signin.html",
+  "./parent-dashboard.html",
+  "./matches.html",
   "./assets/gaia-family-learning.png",
   "./assets/educator-amara.png",
 ];

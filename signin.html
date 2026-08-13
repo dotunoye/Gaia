@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign in | Gaia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Gaia</a
+      ><a href="signup.html">Create an account</a>
+    </header>
+    <main id="main" class="section">
+      <div class="container split-panel">
+        <section>
+          <a class="back-link" href="index.html">← Back to home</a>
+          <p class="eyebrow">Welcome back</p>
+          <h1 style="font-size: 58px">Sign in to your Gaia account.</h1>
+          <p class="lead">
+            Select your account type so we can take you to the correct, private
+            workspace.
+          </p>
+          <form class="form-shell" data-validate data-role-signin action="parent-dashboard.html">
+            <div class="field">
+              <label for="role">Account type</label
+              ><select id="role" required>
+                <option value="">Choose an account type</option>
+                <option>Parent / Guardian</option>
+                <option>Educator / Tutor</option>
+                <option>Student</option>
+                <option>Admin</option>
+              </select>
+              <p class="field-error"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label
+              ><input id="email" type="email" required />
+              <p class="field-error"></p>
+            </div>
+            <div class="field">
+              <label for="password">Password</label
+              ><input id="password" type="password" required />
+              <p class="field-error"></p>
+            </div>
+            <button class="primary" type="submit">Sign in</button
+            ><a
+              href="#"
+              style="margin-left: 14px"
+              data-toast="A password reset link has been sent."
+              >Forgot password?</a
+            >
+          </form>
+        </section>
+        <aside class="card image-panel">
+          <img
+            src="assets/gaia-family-learning.webp"
+            alt="A parent and child learning together"
+          />
+        </aside>
+      </div>
+    </main>
+    <details class="preference-dock">
+      <summary>Display settings</summary>
+      <div class="preference-controls">
+        <button id="motion-toggle">Simplify: Off</button
+        ><button id="theme-toggle">Low-light: Off</button
+        ><select id="language-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="yo">Yoruba</option>
+          <option value="ha">Hausa</option>
+          <option value="ig">Igbo</option>
+        </select>
+      </div>
+    </details>
+    <div id="toast" class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

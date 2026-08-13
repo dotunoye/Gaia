@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Parent dashboard | Gaia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Gaia</a
+      ><span class="account-context">Parent / Guardian</span
+      ><a href="signin.html">Sign out</a>
+    </header>
+    <main id="main" class="app-shell">
+      <aside class="sidebar">
+        <div class="context">Tomi’s parent workspace</div>
+        <nav class="side-nav" aria-label="Parent navigation">
+          <a class="active" href="parent-dashboard.html">Overview</a
+          ><a href="matches.html">Find an educator</a
+          ><a href="#profile">Support profile</a><a href="#progress">Progress</a
+          ><a href="#billing">Billing</a>
+        </nav>
+      </aside>
+      <section class="app-main">
+        <div class="app-header">
+          <div>
+            <p class="eyebrow">Thursday, 13 August</p>
+            <h1>Hello, Adaeze.</h1>
+            <p>Here is what is happening for Tomi.</p>
+          </div>
+          <a class="button secondary" href="matches.html">Find an educator</a>
+        </div>
+        <article class="dashboard-banner">
+          <div>
+            <span class="tag info">Tomorrow at 4:00 pm</span>
+            <h2 style="font-size: 31px; margin-top: 14px">
+              Communication and reading with Amara
+            </h2>
+            <p>50 minutes · Video session · Recording off</p>
+          </div>
+          <a class="button" href="session.html">Join session</a>
+        </article>
+        <div class="stat-row">
+          <article class="stat">
+            <span class="mini-label">Sessions this month</span
+            ><strong class="metric">6</strong><span>2 remaining this week</span>
+          </article>
+          <article class="stat">
+            <span class="mini-label">Active goals</span
+            ><strong class="metric">2</strong><span>Reviewed 12 August</span>
+          </article>
+          <article class="stat">
+            <span class="mini-label">New messages</span
+            ><strong class="metric">1</strong
+            ><span>Preparation note from Amara</span>
+          </article>
+        </div>
+        <div class="dashboard-grid">
+          <article class="card" id="progress">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow">Progress by goal</p>
+                <h3>Using words to make choices</h3>
+              </div>
+              <span class="tag">Steady progress</span>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <strong>Goal agreed</strong>
+                <p>Use a word or picture to choose between two activities.</p>
+              </div>
+              <div class="timeline-item">
+                <strong>5 August · Session 3</strong>
+                <p>
+                  Chose a preferred book independently on 3 of 4 opportunities.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <strong>12 August · Plan adjusted</strong>
+                <p>Add choice-making during short reading activities.</p>
+              </div>
+            </div>
+            <button class="secondary" data-toast="All goals opened.">
+              View all goals
+            </button>
+          </article>
+          <aside>
+            <article class="card" id="profile">
+              <p class="eyebrow">Support profile</p>
+              <h3>Tomi learns best with</h3>
+              <ul class="plain-list">
+                <li>Visual examples</li>
+                <li>A quiet setting</li>
+                <li>Unhurried response time</li>
+              </ul>
+              <button class="secondary" data-toast="Profile editing opened.">
+                Update profile
+              </button>
+            </article>
+            <article class="card" id="billing" style="margin-top: 18px">
+              <p class="eyebrow">Current plan</p>
+              <h3>3 sessions each week</h3>
+              <p>₦75,000/month · Parent feedback included</p>
+              <a href="pricing.html">Review plan</a>
+            </article>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <details class="preference-dock">
+      <summary>Display settings</summary>
+      <div class="preference-controls">
+        <button id="motion-toggle">Simplify: Off</button
+        ><button id="theme-toggle">Low-light: Off</button
+        ><select id="language-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="yo">Yoruba</option>
+          <option value="ha">Hausa</option>
+          <option value="ig">Igbo</option>
+        </select>
+      </div>
+    </details>
+    <div id="toast" class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

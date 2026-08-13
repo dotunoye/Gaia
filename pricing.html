@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pricing | Gaia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Gaia</a>
+      <nav class="public-nav" aria-label="Primary">
+        <a href="index.html#how-it-works">How it works</a
+        ><a href="pricing.html" aria-current="page">Pricing</a
+        ><a href="signin.html">Sign in</a
+        ><a class="button small" href="signup.html">Create an account</a>
+      </nav>
+      <button
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        Menu
+      </button>
+    </header>
+    <nav id="mobile-nav" class="mobile-nav" hidden>
+      <a href="index.html">Home</a><a href="signin.html">Sign in</a
+      ><a href="signup.html">Create an account</a>
+    </nav>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <a class="back-link" href="index.html">← Back to home</a>
+          <p class="eyebrow">Clear monthly pricing</p>
+          <h1>Choose a steady learning rhythm.</h1>
+          <p class="lead">
+            Every plan includes goal-linked notes and one parent feedback
+            session each month. You see the total before booking.
+          </p>
+        </div>
+      </section>
+      <section class="section compact">
+        <div class="container pricing-grid">
+          <article class="card price-card">
+            <span class="tag info">Steady support</span>
+            <h2 style="font-size: 29px; margin-top: 20px">
+              2 sessions each week
+            </h2>
+            <div class="price">₦50,000</div>
+            <p>per month</p>
+            <ul>
+              <li>Two 50-minute sessions weekly</li>
+              <li>Structured progress notes</li>
+              <li>Monthly parent feedback session</li>
+              <li>Audio-only fallback</li>
+            </ul>
+            <a class="button secondary" href="signup.html">Choose this plan</a>
+          </article>
+          <article class="card price-card featured">
+            <span class="tag">More frequent</span>
+            <h2 style="font-size: 29px; margin-top: 20px">
+              3 sessions each week
+            </h2>
+            <div class="price">₦75,000</div>
+            <p>per month</p>
+            <ul>
+              <li>Three 50-minute sessions weekly</li>
+              <li>Structured progress notes</li>
+              <li>Monthly parent feedback session</li>
+              <li>Audio-only fallback</li>
+            </ul>
+            <a class="button" href="signup.html">Choose this plan</a>
+          </article>
+          <article class="card price-card sponsor">
+            <div class="sponsor-ribbon">Partner-supported access</div>
+            <h2 style="font-size: 29px">Sponsored / discounted</h2>
+            <div class="price">Partner set</div>
+            <p>for approved families</p>
+            <ul>
+              <li>For NGO or sponsor referrals</li>
+              <li>Eligibility confirmed with the partner</li>
+              <li>No discount code or public checkout</li>
+              <li>Same care and privacy standards</li>
+            </ul>
+            <a class="button clay" href="sponsor.html"
+              >I have an NGO or sponsor</a
+            >
+          </article>
+        </div>
+        <div class="container">
+          <div class="notice" style="margin-top: 28px">
+            <strong>No surprise charges.</strong> Session frequency, monthly
+            price and educator availability are shown before confirmation.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="wordmark" href="index.html">Gaia</a>
+        <p>Questions about plans? support@gaia.example</p>
+      </div>
+    </footer>
+    <details class="preference-dock">
+      <summary>Display settings</summary>
+      <div class="preference-controls">
+        <button id="motion-toggle">Simplify: Off</button
+        ><button id="theme-toggle">Low-light: Off</button
+        ><select id="language-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="yo">Yoruba</option>
+          <option value="ha">Hausa</option>
+          <option value="ig">Igbo</option>
+        </select>
+      </div>
+    </details>
+    <div id="toast" class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

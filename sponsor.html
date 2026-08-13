@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Partner-supported access | Gaia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Gaia</a
+      ><span class="account-context">Partner-supported access</span>
+    </header>
+    <main id="main">
+      <div class="narrow page-head">
+        <a class="back-link" href="pricing.html">← Back to plans</a>
+        <p class="eyebrow">NGO or sponsor referral</p>
+        <h1 style="font-size: 52px">Tell us about your referral.</h1>
+        <p class="lead">
+          Gaia confirms eligibility directly with the organisation. This is not
+          a discount code or public checkout.
+        </p>
+        <form class="form-shell" data-validate action="parent-onboarding.html">
+          <div class="field">
+            <label for="pname">Parent or guardian name</label
+            ><input id="pname" required />
+            <p class="field-error"></p>
+          </div>
+          <div class="field">
+            <label for="cname">Child’s first name</label
+            ><input id="cname" required />
+            <p class="hint">This helps us identify the correct referral.</p>
+            <p class="field-error"></p>
+          </div>
+          <div class="field">
+            <label for="ngo">NGO or sponsor name</label
+            ><input id="ngo" required />
+            <p class="field-error"></p>
+          </div>
+          <div class="field">
+            <label for="reference">Referral ID, if provided</label
+            ><input id="reference" />
+            <p class="hint">You can leave this blank.</p>
+          </div>
+          <div class="notice clay">
+            The partner may set your monthly contribution. Gaia will show it
+            clearly before your first booking.
+          </div>
+          <button class="primary" type="submit">
+            Continue to parent setup
+          </button>
+        </form>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Parent setup | Gaia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Gaia</a
+      ><span class="account-context">Parent / Guardian setup</span
+      ><a href="signin.html">Save and leave</a>
+    </header>
+    <main id="main" data-wizard>
+      <div class="wizard-layout">
+        <aside class="wizard-aside">
+          <p class="eyebrow">Parent setup</p>
+          <div class="progress-label">
+            <span>Your progress</span><strong>Step 1 of 6</strong>
+          </div>
+          <div class="progress"><span></span></div>
+          <p>
+            Complete one short group at a time. You can update every answer
+            later.
+          </p>
+          <div class="notice">
+            <strong>Need a pause?</strong><br />Your answers stay on this device
+            in the prototype.
+          </div>
+        </aside>
+        <div>
+          <section class="wizard-step">
+            <div class="form-shell">
+              <p class="eyebrow">Your account</p>
+              <h1 tabindex="-1" style="font-size: 48px">
+                Create your parent sign-in.
+              </h1>
+              <p>Password requirements are shown before you submit.</p>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="full-name">Full name</label
+                  ><input id="full-name" required />
+                  <p class="field-error"></p>
+                </div>
+                <div class="field">
+                  <label for="email">Email address</label
+                  ><input id="email" type="email" required />
+                  <p class="field-error"></p>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone number</label
+                  ><input
+                    id="phone"
+                    type="tel"
+                    placeholder="0800 000 0000"
+                    required
+                  />
+                  <p class="field-error"></p>
+                </div>
+                <div class="field">
+                  <label for="language">Preferred language</label
+                  ><select id="language" required>
+                    <option>English</option>
+                    <option>Hausa</option>
+                    <option>Yoruba</option>
+                    <option>Igbo</option>
+                  </select>
+                  <p class="field-error"></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="new-password">Password</label
+                ><input
+                  id="new-password"
+                  type="password"
+                  minlength="8"
+                  required
+                />
+                <p class="hint">
+                  Use at least 8 characters, including one number.
+                </p>
+                <p class="field-error"></p>
+              </div>
+              <div class="wizard-actions">
+                <a href="signup.html">Back to roles</a
+                ><button class="primary" type="button" data-next-step>
+                  Continue →
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="wizard-step">
+            <div class="form-shell">
+              <p class="eyebrow">Your child</p>
+              <h1 tabindex="-1" style="font-size: 48px">
+                Who are we supporting?
+              </h1>
+              <p>We use your child’s name—not a label—throughout Gaia.</p>
+              <div class="field">
+                <label for="child-name">Child’s first name</label
+                ><input id="child-name" required />
+                <p class="field-error"></p>
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="dob">Date of birth</label
+                  ><input id="dob" type="date" required />
+                  <p class="field-error"></p>
+                </div>
+                <div class="field">
+                  <label for="child-language">Preferred language</label
+                  ><select id="child-language">
+                    <option>English</option>
+                    <option>Yoruba</option>
+                    <option>Hausa</option>
+                    <option>Igbo</option>
+                    <option>Uses few or no spoken words</option>
+                  </select>
+                </div>
+              </div>
+              <div class="notice">
+                After setup, you can create a separate, simplified child login
+                managed from your parent account.
+              </div>
+              <div class="wizard-actions">
+                <button class="secondary" type="button" data-previous-step>
+                  ← Back</button
+                ><button class="primary" type="button" data-next-step>
+                  Continue →
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="wizard-step">
+            <div class="form-shell">
+              <p class="eyebrow">Listen first</p>
+              <h1 tabindex="-1" style="font-size: 48px">
+                Tell us what helps your child.
+              </h1>
+              <p>
+                Use your own words. These questions do not measure deficits.
+              </p>
+              <div class="field">
+                <label for="communication"
+                  >How does your child communicate best?</label
+                ><textarea
+                  id="communication"
+                  required
+                  placeholder="For example: short phrases, pointing, pictures or a communication device."
+                ></textarea>
+                <p class="field-error"></p>
+              </div>
+              <div class="field">
+                <label for="sensory"
+                  >What sensory experiences help or make learning harder?</label
+                ><textarea
+                  id="sensory"
+                  required
+                  placeholder="For example: learns best in a quiet room and may need movement breaks."
+                ></textarea>
+                <p class="field-error"></p>
+              </div>
+              <div class="field">
+                <label for="history"
+                  >What learning or therapy support have they had before?</label
+                ><textarea
+                  id="history"
+                  placeholder="Share only what feels relevant."
+                ></textarea>
+              </div>
+              <div class="wizard-actions">
+                <button class="secondary" type="button" data-previous-step>
+                  ← Back</button
+                ><button class="primary" type="button" data-next-step>
+                  Continue →
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="wizard-step">
+            <div class="form-shell">
+              <p class="eyebrow">Support profile</p>
+              <h1 tabindex="-1" style="font-size: 48px">
+                Consider each area separately.
+              </h1>
+              <p>No answers are combined into a single type, level or score.</p>
+              <div class="rating-row">
+                <strong>Communication support</strong
+                ><label
+                  ><input type="radio" name="communication-rating" />
+                  Occasional</label
+                ><label
+                  ><input type="radio" name="communication-rating" checked />
+                  Regular</label
+                ><label
+                  ><input type="radio" name="communication-rating" />
+                  High</label
+                >
+              </div>
+              <div class="rating-row">
+                <strong>Sensory consideration</strong
+                ><label
+                  ><input type="radio" name="sensory-rating" />
+                  Occasional</label
+                ><label
+                  ><input type="radio" name="sensory-rating" checked />
+                  Regular</label
+                ><label
+                  ><input type="radio" name="sensory-rating" /> High</label
+                >
+              </div>
+              <div class="rating-row">
+                <strong>Learning pace support</strong
+                ><label
+                  ><input type="radio" name="pace-rating" /> Occasional</label
+                ><label
+                  ><input type="radio" name="pace-rating" checked />
+                  Regular</label
+                ><label><input type="radio" name="pace-rating" /> High</label>
+              </div>
+              <div class="rating-row">
+                <strong>Academic focus</strong
+                ><label
+                  ><input type="radio" name="academic-rating" /> Emerging</label
+                ><label
+                  ><input type="radio" name="academic-rating" checked />
+                  Developing</label
+                ><label
+                  ><input type="radio" name="academic-rating" /> Focused</label
+                >
+              </div>
+              <div class="notice">
+                <strong>Already have a professional report?</strong
+                ><label for="report" class="hint"
+                  >Upload PDF, JPG or PNG instead of completing every
+                  section.</label
+                ><input
+                  id="report"
+                  type="file"
+                  accept=".pdf,.jpg,.png"
+                  style="margin-top: 10px"
+                />
+              </div>
+              <div class="wizard-actions">
+                <button class="secondary" type="button" data-previous-step>
+                  ← Back</button
+                ><button class="primary" type="button" data-next-step>
+                  Continue →
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="wizard-step">
+            <div class="form-shell">
+              <p class="eyebrow">Schedule and plan</p>
+              <h1 tabindex="-1" style="font-size: 48px">
+                Choose what works for your family.
+              </h1>
+              <div class="field">
+                <label>Preferred times</label>
+                <div class="choice-grid">
+                  <div class="choice">
+                    <input type="checkbox" id="morning" /><label for="morning"
+                      >Weekday mornings</label
+                    >
+                  </div>
+                  <div class="choice">
+                    <input type="checkbox" id="afternoon" /><label
+                      for="afternoon"
+                      >Weekday afternoons</label
+                    >
+                  </div>
+                  <div class="choice">
+                    <input type="checkbox" id="evening" /><label for="evening"
+                      >Weekday evenings</label
+                    >
+                  </div>
+                  <div class="choice">
+                    <input type="checkbox" id="saturday" /><label for="saturday"
+                      >Saturday</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <hr class="soft-divider" />
+              <div class="field">
+                <label>Monthly plan</label>
+                <div class="choice-grid">
+                  <div class="choice">
+                    <input type="radio" name="plan" id="plan2" checked /><label
+                      for="plan2"
+                      ><strong>2 sessions weekly</strong
+                      ><br />₦50,000/month</label
+                    >
+                  </div>
+                  <div class="choice">
+                    <input type="radio" name="plan" id="plan3" /><label
+                      for="plan3"
+                      ><strong>3 sessions weekly</strong
+                      ><br />₦75,000/month</label
+                    >
+                  </div>
+                  <div class="choice">
+                    <input type="radio" name="plan" id="plans" /><label
+                      for="plans"
+                      ><strong>NGO / sponsored</strong><br />Partner-confirmed
+                      amount</label
+                    >
+                  </div>
+                </div>
+                <p class="hint">
+                  Every plan includes a parent feedback session each month.
+                </p>
+              </div>
+              <div class="wizard-actions">
+                <button class="secondary" type="button" data-previous-step>
+                  ← Back</button
+                ><button class="primary" type="button" data-next-step>
+                  Review profile →
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="wizard-step">
+            <div class="form-shell">
+              <span class="tag">Ready to review</span>
+              <h1 tabindex="-1" style="font-size: 48px; margin-top: 18px">
+                Your child’s support summary.
+              </h1>
+              <p>You can edit this from the dashboard at any time.</p>
+              <article class="card tinted">
+                <h3>Learning works best with</h3>
+                <ul class="check-list">
+                  <li>Short spoken instructions with visual examples</li>
+                  <li>A calm room and planned movement breaks</li>
+                  <li>Extra time to respond without being rushed</li>
+                  <li>Current focus: communication and early reading</li>
+                </ul>
+              </article>
+              <div class="notice">
+                <strong>Email verification</strong><br />In the working product,
+                we send a secure link before account access. This prototype
+                continues directly to suggested educators.
+              </div>
+              <div class="wizard-actions">
+                <button class="secondary" type="button" data-previous-step>
+                  ← Edit answers</button
+                ><a class="button" href="matches.html"
+                  >Find suggested educators →</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <details class="preference-dock">
+      <summary>Display settings</summary>
+      <div class="preference-controls">
+        <button id="motion-toggle">Simplify: Off</button
+        ><button id="theme-toggle">Low-light: Off</button
+        ><select id="language-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="yo">Yoruba</option>
+          <option value="ha">Hausa</option>
+          <option value="ig">Igbo</option>
+        </select>
+      </div>
+    </details>
+    <div id="toast" class="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

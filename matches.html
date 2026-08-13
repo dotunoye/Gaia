@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Suggested educators | Gaia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Gaia</a
+      ><span class="account-context">Parent / Guardian</span
+      ><a href="parent-dashboard.html">Dashboard</a>
+    </header>
+    <main id="main" class="app-shell">
+      <aside class="sidebar">
+        <div class="context">Tomi’s parent workspace</div>
+        <nav class="side-nav">
+          <a href="parent-dashboard.html">Overview</a
+          ><a class="active" href="matches.html">Find an educator</a
+          ><a href="parent-dashboard.html#profile">Support profile</a
+          ><a href="pricing.html">Billing</a>
+        </nav>
+      </aside>
+      <section class="app-main">
+        <a class="back-link" href="parent-dashboard.html"
+          >← Back to dashboard</a
+        >
+        <div class="app-header">
+          <div>
+            <p class="eyebrow">Your suggested educators</p>
+            <h1>Three educators may fit Tomi’s needs.</h1>
+            <p>
+              Ranked by relevant experience, language and your availability. You
+              make the final choice.
+            </p>
+          </div>
+        </div>
+        <div style="display: grid; gap: 18px">
+          <article class="card educator-card">
+            <img
+              src="assets/educator-amara.webp"
+              alt="Portrait of Amara Okafor"
+            />
+            <div>
+              <span class="verified">Verified educator</span>
+              <h2 style="font-size: 25px">Amara Okafor</h2>
+              <p>Communication and early literacy · 7 years’ experience</p>
+              <div class="match-reason">
+                <strong>Why suggested:</strong> Speaks Yoruba · supports
+                communication goals · available Tuesdays
+              </div>
+            </div>
+            <div class="match-score">
+              <strong>94%</strong><span>profile fit</span
+              ><a
+                class="button secondary"
+                href="educator-profile.html"
+                style="margin-top: 14px"
+                >View profile</a
+              >
+            </div>
+          </article>
+          <article class="card educator-card">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <span class="verified">Verified educator</span>
+              <h2 style="font-size: 25px">Chidi Nwosu</h2>
+              <p>Literacy and sensory-aware teaching · 7 years’ experience</p>
+              <div class="match-reason">
+                <strong>Why suggested:</strong> Speaks Igbo · quiet teaching
+                environment · available Saturdays
+              </div>
+            </div>
+            <div class="match-score">
+              <strong>88%</strong><span>profile fit</span
+              ><button class="secondary" data-toast="Chidi’s profile opened.">
+                View profile
+              </button>
+            </div>
+          </article>
+          <article class="card educator-card">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <span class="verified">Verified educator</span>
+              <h2 style="font-size: 25px">Bola Adeyemi</h2>
+              <p>Communication and play-based learning · 6 years’ experience</p>
+              <div class="match-reason">
+                <strong>Why suggested:</strong> Speaks Yoruba · supports current
+                goals · weekday availability
+              </div>
+            </div>
+            <div class="match-score">
+              <strong>84%</strong><span>profile fit</span
+              ><button class="secondary" data-toast="Bola’s profile opened.">
+                View profile
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="notice" style="margin-top: 24px">
+          <strong>These percentages are not quality scores.</strong> They only
+          show how closely profile details match your stated needs and schedule.
+        </div>
+      </section>
+    </main>
+    <details class="preference-dock">
+      <summary>Display settings</summary>
+      <div class="preference-controls">
+        <button id="motion-toggle">Simplify: Off</button
+        ><button id="theme-toggle">Low-light: Off</button
+        ><select id="language-select" aria-label="Language">
+          <option>English</option>
+        </select>
+      </div>
+    </details>
+    <div id="toast" class="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

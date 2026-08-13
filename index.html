@@ -1,61 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f4efe6" />
-    <meta
-      name="description"
-      content="Gaia connects families with vetted autism-trained educators in Nigeria."
-    />
-    <title>Gaia | Learning support that fits your child</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <header class="site-header">
-      <a class="wordmark" href="#/" aria-label="Gaia home">Gaia</a>
-      <nav class="public-nav" aria-label="Primary navigation">
-        <a href="#/how-it-works" data-i18n="how">How it works</a>
-        <a href="#/pricing" data-i18n="pricing">Pricing</a>
-        <a href="#/signin" data-i18n="signin">Sign in</a>
-        <a class="button small" href="#/signup" data-i18n="create">Create an account</a>
-      </nav>
-      <button
-        class="menu-button"
-        type="button"
-        aria-expanded="false"
-        aria-controls="mobile-nav"
-      >
-        Menu
-      </button>
-    </header>
-    <nav
-      id="mobile-nav"
-      class="mobile-nav"
-      aria-label="Mobile navigation"
-      hidden
-    >
-      <a href="#/how-it-works" data-i18n="how">How it works</a><a href="#/pricing" data-i18n="pricing">Pricing</a
-      ><a href="#/signin" data-i18n="signin">Sign in</a><a href="#/signup" data-i18n="create">Create an account</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3eee4">
+  <meta name="description" content="Gaia connects autistic children in Nigeria with vetted, autism-trained educators.">
+  <title>Gaia | Personal learning support in Nigeria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="utility-bar">Private, personalised learning support for families across Nigeria</div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Gaia home">Gaia</a>
+    <span class="masthead-note">Vetted educators. Parent-led support.</span>
+    <nav class="public-nav" aria-label="Primary navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="signin.html">Sign in</a>
+      <a class="button small" href="signup.html">Create an account</a>
     </nav>
-    <main id="main" tabindex="-1"></main>
-    <div class="preference-dock" aria-label="Display and language settings">
-      <button id="motion-toggle" type="button" aria-pressed="false">
-        Simplify view: Off
-      </button>
-      <button id="theme-toggle" type="button" aria-pressed="false">
-        Low-light: Off
-      </button>
-      <label for="language-select">Language</label>
-      <select id="language-select">
-        <option value="en">English</option>
-        <option value="yo">Yoruba</option>
-        <option value="ha">Hausa</option>
-        <option value="ig">Igbo</option>
-      </select>
-    </div>
-    <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script src="app.js"></script>
-  </body>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+    <a href="#how-it-works">How it works</a><a href="pricing.html">Pricing</a><a href="signin.html">Sign in</a><a href="signup.html">Create an account</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Personal learning support in Nigeria</p>
+        <h1>Learning support that begins with listening.</h1>
+        <p class="lead">Gaia connects autistic children with vetted, autism-trained educators for steady support at a pace that fits each child.</p>
+        <div class="button-row">
+          <a class="button" href="signup.html">Create an account</a>
+          <a class="button secondary" href="#how-it-works">See how Gaia works</a>
+        </div>
+        <div class="hero-proof" aria-label="Gaia trust information">
+          <div class="portrait-stack" aria-hidden="true"><span>ID</span><span>TR</span><span>RF</span></div>
+          <div><strong>Every educator is reviewed</strong><span>Identity, autism training and references checked</span></div>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/gaia-family-learning.webp" alt="A Nigerian mother calmly supports her daughter during a learning activity" fetchpriority="high">
+      </figure>
+    </section>
+
+    <section class="trust-strip" aria-label="Gaia principles">
+      <div class="trust-item"><strong>Parent-led choices</strong><span>You choose from a clear shortlist</span></div>
+      <div class="trust-item"><strong>No diagnostic labels</strong><span>Needs are described independently</span></div>
+      <div class="trust-item"><strong>Private by design</strong><span>Controlled access to profiles and records</span></div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">A clear path to support</p><h2>What happens after you join</h2></div><p>Each step is explained before you make a decision. Nothing changes without your knowledge.</p></div>
+        <div class="grid-3">
+          <article class="card feature-card" data-number="1"><span class="step-number">1</span><h3>Tell us about your child</h3><p>Share how your child communicates, learns and experiences their environment. Update it whenever needs shift.</p></article>
+          <article class="card feature-card" data-number="2"><span class="step-number">2</span><h3>Review suggested educators</h3><p>See a shortlist with plain-language reasons for every suggestion. You choose who feels right.</p></article>
+          <article class="card feature-card" data-number="3"><span class="step-number">3</span><h3>Learn and adjust together</h3><p>Book sessions, follow individual goals and revise the support plan together over time.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container split-panel">
+        <div class="quote-card"><p class="eyebrow">A support profile, not a label</p><blockquote>“It describes what helps Tomi learn. It does not reduce her to a diagnosis.”</blockquote><strong>Adaeze, parent in Lagos</strong></div>
+        <article class="card"><p class="eyebrow">Built for real conditions</p><h2>Calm, private and data-conscious.</h2><ul class="plain-list"><li>Audio-only fallback during poor connections</li><li>Simple dashboards that load quickly</li><li>Recording off unless a parent clearly consents</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card tinted" style="text-align:center;padding:52px"><p class="eyebrow">Ready when you are</p><h2>Start with your child’s name and what helps them learn.</h2><p style="margin-inline:auto">You can save your progress, ask for help and update every answer later.</p><a class="button" href="signup.html">Create a parent account</a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a class="wordmark" href="index.html">Gaia</a><p>Personal learning support for autistic children in Nigeria.</p></div><p>Privacy · Safeguarding · Accessibility<br>Help: support@gaia.example</p></div></footer>
+  <details class="preference-dock"><summary>Display settings</summary><div class="preference-controls"><button id="motion-toggle" type="button" aria-pressed="false">Simplify: Off</button><button id="theme-toggle" type="button" aria-pressed="false">Low-light: Off</button><label class="visually-hidden" for="language-select">Language</label><select id="language-select"><option value="en">English</option><option value="yo">Yoruba</option><option value="ha">Hausa</option><option value="ig">Igbo</option></select></div></details>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
 </html>
