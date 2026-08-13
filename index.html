@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4efe6" />
+    <meta
+      name="description"
+      content="Gaia connects families with vetted autism-trained educators in Nigeria."
+    />
+    <title>Gaia | Learning support that fits your child</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#/" aria-label="Gaia home">Gaia</a>
+      <nav class="public-nav" aria-label="Primary navigation">
+        <a href="#/how-it-works" data-i18n="how">How it works</a>
+        <a href="#/pricing" data-i18n="pricing">Pricing</a>
+        <a href="#/signin" data-i18n="signin">Sign in</a>
+        <a class="button small" href="#/signup" data-i18n="create">Create an account</a>
+      </nav>
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        Menu
+      </button>
+    </header>
+    <nav
+      id="mobile-nav"
+      class="mobile-nav"
+      aria-label="Mobile navigation"
+      hidden
+    >
+      <a href="#/how-it-works" data-i18n="how">How it works</a><a href="#/pricing" data-i18n="pricing">Pricing</a
+      ><a href="#/signin" data-i18n="signin">Sign in</a><a href="#/signup" data-i18n="create">Create an account</a>
+    </nav>
+    <main id="main" tabindex="-1"></main>
+    <div class="preference-dock" aria-label="Display and language settings">
+      <button id="motion-toggle" type="button" aria-pressed="false">
+        Simplify view: Off
+      </button>
+      <button id="theme-toggle" type="button" aria-pressed="false">
+        Low-light: Off
+      </button>
+      <label for="language-select">Language</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="yo">Yoruba</option>
+        <option value="ha">Hausa</option>
+        <option value="ig">Igbo</option>
+      </select>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
